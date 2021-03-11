@@ -1,0 +1,92 @@
+@import '~antd/dist/antd';
+@import 'assets/styles/_styles';
+
+@font-face {
+  font-family: 'Inter';
+  // src: url("./assets/fonts/SourceSansPro-Regular.ttf") format("ttf")
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  font-family: 'Source Sans Pro', Fallback, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  overflow-x: hidden;
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+}
+
+b {
+  font-weight: 600;
+}
+
+.margin-less {
+  margin: 0 !important;
+}
+
+.padding-less {
+  padding: 0 !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.home-common-title {
+  font-size: 38px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.home-common-description {
+  font-size: 20px;
+  color: black;
+}
+
+.text-color-primary {
+  color: @color-primary;
+}
+
+.traversal-container {
+  position: relative;
+  padding: 40px 0;
+  background-color: @color-white;
+  overflow: hidden;
+}
+
+.ant-card {
+  // box-shadow: 0 0 7px -3px #0000004d;
+  .ant-card-head-title {
+    color: @color-primary;
+    font-weight: bold;
+  }
+}
+
+.ant-message-custom-content {
+  display: flex;
+  align-items: center;
+}
+
+span.link {
+  &:hover {
+    color: @color-link;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
